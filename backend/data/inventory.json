@@ -1,0 +1,5 @@
+{
+  "Store A": { "stock": 6, "threshold": 10 },
+  "Store B": { "stock": 12, "threshold": 10 },
+  "Store C": { "stock": 3, "threshold": 8 }
+} 

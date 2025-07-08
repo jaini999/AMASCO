@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2025-06-29T12:00:10Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 4 units due to low inventory",
+    "explanation": "Stock at Store A fell below threshold."
+  }
+] 
