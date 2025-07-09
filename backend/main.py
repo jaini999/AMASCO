@@ -1,18 +1,27 @@
 from agents.inventory_agent import InventoryAgent
+from agents.route_agent import RouteAgent
+from agents.disruption_agent import DisruptionAgent
 import time
 import threading
 import json
 from datetime import datetime
 
 INVENTORY_PATH = 'data/inventory.json'
+ROUTES_PATH = 'data/routes.json'
+DISRUPTIONS_PATH = 'data/disruptions.json'
 LOGS_PATH = 'data/logs.json'
+
+ALL_POSSIBLE_ROUTES = [f'Route {i}' for i in range(1, 10)]
 
 class Simulator:
     def __init__(self):
         self.inventory_agent = InventoryAgent(INVENTORY_PATH)
+        self.route_agent = RouteAgent(ROUTES_PATH)
+        self.disruption_agent = DisruptionAgent(DISRUPTIONS_PATH)
         self.paused = False
         self.running = True
         self.loop_thread = threading.Thread(target=self.run_loop)
+        self.tick = 0
 
     def start(self):
         print('Starting simulation loop. Press Ctrl+C to stop.')
@@ -25,11 +34,38 @@ class Simulator:
             time.sleep(2)
 
     def simulation_step(self):
-        # Example: Check inventory and log a placeholder action
-        inventory = self.inventory_agent.get_inventory()
-        for store, data in inventory.items():
-            if data['stock'] < data['threshold']:
-                self.log_action('InventoryAgent', 'restock_check', store, f'Stock at {store} is low ({data["stock"]} < {data["threshold"]})')
+        self.tick += 1
+        # InventoryAgent logic: restock if needed
+        restock_actions = self.inventory_agent.restock_if_needed()
+        for action in restock_actions:
+            self.log_action(
+                'InventoryAgent',
+                'restock',
+                action['store'],
+                f"Restocked {action['restock_amount']} units at {action['store']} (new stock: {action['new_stock']}, threshold: {action['threshold']})"
+            )
+        # DisruptionAgent logic
+        disruptions = self.disruption_agent.check_disruptions()
+        for disruption in disruptions:
+            self.log_action('DisruptionAgent', 'disruption_check', disruption.get('location', 'unknown'), f'Checked disruption of type {disruption["type"]} at {disruption.get("location", "unknown")}')
+        # RouteAgent logic: reroute if needed
+        reroute_actions = self.route_agent.reroute_if_needed(disruptions)
+        for action in reroute_actions:
+            self.log_action(
+                'RouteAgent',
+                'reroute',
+                action['truck'],
+                f"Rerouted {action['truck']} from {action['from_route']} to {action['to_route']} due to {action['reason']}"
+            )
+        # Resolve the oldest disruption every 2 ticks
+        if self.tick % 2 == 0:
+            resolved = self.disruption_agent.resolve_oldest_disruption()
+            if resolved:
+                explanation = (
+                    f"Resolved disruption: {resolved['type'].capitalize()} at {resolved['location']} (severity: {resolved['severity']}). "
+                    f"This disruption was active for approximately 4 seconds (2 simulation ticks)."
+                )
+                self.log_action('DisruptionAgent', 'resolve_disruption', resolved['location'], explanation)
 
     def log_action(self, agent, action, target, explanation):
         log_entry = {

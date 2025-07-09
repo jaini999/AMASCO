@@ -9,6 +9,7 @@ interface InventoryItem {
   maxStock: number;
   minStock: number;
   replenishmentTriggered: boolean;
+  recentlyDisrupted?: boolean;
 }
 
 interface InventoryPanelProps {
@@ -51,15 +52,18 @@ export const InventoryPanel: React.FC<InventoryPanelProps> = ({ inventory, darkM
         {inventory.map((item) => {
           const status = getStockStatus(item);
           const percentage = (item.currentStock / item.maxStock) * 100;
-          
+          const highlight = item.recentlyDisrupted;
           return (
-            <div key={item.id} className={`p-4 rounded-lg border ${getStatusBg(status)} ${darkMode ? 'hover:bg-zinc-700/50' : 'hover:bg-gray-50'} transition-colors`}>
+            <div key={item.id} className={`p-4 rounded-lg border ${getStatusBg(status)} ${highlight ? 'border-amber-400 ring-2 ring-amber-300 animate-pulse' : ''} ${darkMode ? 'hover:bg-zinc-700/50' : 'hover:bg-gray-50'} transition-colors`}>
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h3 className={`font-medium ${darkMode ? 'text-white' : 'text-gray-900'}`}>{item.name}</h3>
                   <p className={`text-sm ${darkMode ? 'text-zinc-400' : 'text-gray-600'}`}>{item.location}</p>
                 </div>
-                {status === 'critical' && (
+                {highlight && (
+                  <AlertTriangle className="w-5 h-5 text-amber-400 flex-shrink-0 animate-bounce" />
+                )}
+                {status === 'critical' && !highlight && (
                   <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0" />
                 )}
                 {item.replenishmentTriggered && (

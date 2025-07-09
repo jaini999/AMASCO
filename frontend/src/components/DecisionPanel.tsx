@@ -6,7 +6,6 @@ interface Decision {
   agent: string;
   action: string;
   timestamp: string;
-  confidence: number;
   reasoning: string;
   impact: string;
 }
@@ -21,12 +20,6 @@ export const DecisionPanel: React.FC<DecisionPanelProps> = ({ decisions, darkMod
 
   const toggleExpanded = (decisionId: string) => {
     setExpandedDecision(expandedDecision === decisionId ? null : decisionId);
-  };
-
-  const getConfidenceColor = (confidence: number) => {
-    if (confidence >= 80) return 'text-emerald-400';
-    if (confidence >= 60) return 'text-amber-400';
-    return 'text-red-400';
   };
 
   const getAgentColor = (agent: string) => {
@@ -64,12 +57,6 @@ export const DecisionPanel: React.FC<DecisionPanelProps> = ({ decisions, darkMod
               <p className={`font-medium mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>{decision.action}</p>
               
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className={`text-sm ${darkMode ? 'text-zinc-400' : 'text-gray-600'}`}>Confidence:</span>
-                  <span className={`font-medium ${getConfidenceColor(decision.confidence)}`}>
-                    {decision.confidence}%
-                  </span>
-                </div>
                 
                 <button
                   onClick={() => toggleExpanded(decision.id)}
@@ -89,12 +76,8 @@ export const DecisionPanel: React.FC<DecisionPanelProps> = ({ decisions, darkMod
               <div className={`border-t p-4 ${darkMode ? 'border-zinc-700 bg-black/50' : 'border-gray-200 bg-gray-100/50'}`}>
                 <div className="space-y-3">
                   <div>
-                    <h4 className={`text-sm font-medium mb-1 ${darkMode ? 'text-zinc-300' : 'text-gray-700'}`}>Reasoning:</h4>
+                    <h4 className={`text-sm font-medium mb-1 ${darkMode ? 'text-zinc-300' : 'text-gray-700'}`}>Agent:</h4>
                     <p className={`text-sm ${darkMode ? 'text-zinc-400' : 'text-gray-600'}`}>{decision.reasoning}</p>
-                  </div>
-                  <div>
-                    <h4 className={`text-sm font-medium mb-1 ${darkMode ? 'text-zinc-300' : 'text-gray-700'}`}>Expected Impact:</h4>
-                    <p className={`text-sm ${darkMode ? 'text-zinc-400' : 'text-gray-600'}`}>{decision.impact}</p>
                   </div>
                 </div>
               </div>

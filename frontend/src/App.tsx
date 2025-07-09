@@ -5,110 +5,142 @@ import { MapPanel } from './components/MapPanel';
 import { DecisionPanel } from './components/DecisionPanel';
 import { Footer } from './components/Footer';
 
-// Mock data
-const mockInventory = [
-  {
-    id: '1',
-    name: 'Electronics Components',
-    location: 'Warehouse A',
-    currentStock: 50,
-    maxStock: 500,
-    minStock: 100,
-    replenishmentTriggered: true
-  },
-  {
-    id: '2',
-    name: 'Automotive Parts',
-    location: 'Store 1',
-    currentStock: 250,
-    maxStock: 400,
-    minStock: 80,
-    replenishmentTriggered: false
-  },
-  {
-    id: '3',
-    name: 'Medical Supplies',
-    location: 'Store 2',
-    currentStock: 15,
-    maxStock: 200,
-    minStock: 50,
-    replenishmentTriggered: true
-  },
-  {
-    id: '4',
-    name: 'Consumer Goods',
-    location: 'Warehouse B',
-    currentStock: 180,
-    maxStock: 300,
-    minStock: 60,
-    replenishmentTriggered: false
-  }
-];
+const BACKEND_URL = "http://localhost:8000"; // Change if backend runs on a different port
 
-const mockDecisions = [
-  {
-    id: '1',
-    agent: 'Inventory Agent',
-    action: 'Triggered emergency replenishment for Medical Supplies',
-    timestamp: '2 mins ago',
-    confidence: 95,
-    reasoning: 'Stock level dropped below critical threshold (7.5% remaining). Historical demand patterns indicate 3-day lead time required.',
-    impact: 'Prevents stockout scenario. Estimated cost: $2,400. Revenue protection: $18,000.'
-  },
-  {
-    id: '2',
-    agent: 'Routing Agent',
-    action: 'Rerouted delivery truck T2 due to weather disruption',
-    timestamp: '5 mins ago',
-    confidence: 78,
-    reasoning: 'Weather alert detected on primary route. Alternative route adds 15 minutes but maintains delivery schedule.',
-    impact: 'Maintains on-time delivery. Additional fuel cost: $12. Customer satisfaction preserved.'
-  },
-  {
-    id: '3',
-    agent: 'Demand Agent',
-    action: 'Adjusted demand forecast for Electronics Components',
-    timestamp: '12 mins ago',
-    confidence: 85,
-    reasoning: 'Detected 23% increase in local demand based on recent sales patterns and competitor analysis.',
-    impact: 'Proactive inventory adjustment. Prevents potential stockout. Estimated revenue capture: $5,200.'
-  },
-  {
-    id: '4',
-    agent: 'Inventory Agent',
-    action: 'Optimized stock levels for Consumer Goods',
-    timestamp: '18 mins ago',
-    confidence: 72,
-    reasoning: 'Seasonal demand pattern analysis suggests reducing safety stock by 15% to optimize storage costs.',
-    impact: 'Reduces holding costs by $890/month. Maintains 99.2% service level.'
-  }
-];
+interface InventoryItem {
+  id: string;
+  name: string;
+  location: string;
+  currentStock: number;
+  maxStock: number;
+  minStock: number;
+  replenishmentTriggered: boolean;
+  recentlyDisrupted: boolean;
+}
+
+interface RouteItem {
+  truck: string;
+  from: string;
+  to: string;
+  route: string;
+}
+
+interface DisruptionItem {
+  type: string;
+  location: string;
+  severity: string;
+  timestamp: string;
+}
+
+interface DecisionItem {
+  id: string;
+  agent: string;
+  action: string;
+  timestamp: string;
+  reasoning: string;
+  impact: string;
+}
 
 function App() {
   const [simulationRunning, setSimulationRunning] = useState(true);
   const [darkMode, setDarkMode] = useState(true);
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [inventory, setInventory] = useState<InventoryItem[]>([]);
+  const [routes, setRoutes] = useState<RouteItem[]>([]);
+  const [disruptions, setDisruptions] = useState<DisruptionItem[]>([]);
+  const [decisions, setDecisions] = useState<DecisionItem[]>([]);
+
+  // Poll backend for data every 2 seconds
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Inventory
+        const invRes = await fetch(`${BACKEND_URL}/inventory`);
+        const invData = await invRes.json();
+
+        // Logs/Decisions (fetch once)
+        const logsRes = await fetch(`${BACKEND_URL}/logs`);
+        const logs = await logsRes.json();
+        // Find recently disrupted stores from the last 10 logs, but clear highlight if a restock happened after the disruption
+        const recentLogs = logs.slice(-20).reverse(); // Most recent first
+        const disruptedStores = new Set<string>();
+        const restockedStores = new Set<string>();
+        for (const log of recentLogs) {
+          if (log.action === 'restock' && log.agent === 'InventoryAgent') {
+            restockedStores.add(log.target);
+          }
+          if (log.action === 'inventory_disruption' && !restockedStores.has(log.target)) {
+            disruptedStores.add(log.target);
+          }
+        }
+        // Map backend inventory to InventoryPanel format, add recentlyDisrupted
+        const invArr: InventoryItem[] = Object.entries(invData).map(([store, data], idx) => {
+          const d = data as { stock: number; threshold: number };
+          return {
+            id: String(idx + 1),
+            name: store,
+            location: store,
+            currentStock: d.stock,
+            maxStock: d.threshold * 2, // Assume max is double threshold for demo
+            minStock: d.threshold,
+            replenishmentTriggered: d.stock < d.threshold,
+            recentlyDisrupted: disruptedStores.has(store)
+          };
+        });
+        setInventory(invArr);
+
+        // Routes
+        const routesRes = await fetch(`${BACKEND_URL}/routes`);
+        setRoutes(await routesRes.json());
+
+        // Disruptions
+        const disruptionsRes = await fetch(`${BACKEND_URL}/disruptions`);
+        setDisruptions(await disruptionsRes.json());
+
+        // Map logs to DecisionPanel format, filtering out 'disruption_check' actions and all DisruptionAgent logs
+        const mappedDecisions: DecisionItem[] = logs
+          .filter((log: any) => log.action !== 'disruption_check' && log.agent !== 'DisruptionAgent')
+          .slice(-20)
+          .reverse()
+          .map((log: any, idx: number) => ({
+            id: String(idx + 1),
+            agent: log.agent || 'Agent',
+            action: log.action === 'reroute' ? 'ReRouting' : log.action === 'restock' ? 'ReStock' : (log.action || ''),
+            timestamp: log.timestamp ? new Date(log.timestamp).toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' }) : '',
+            reasoning: log.explanation || log.details || ''
+          }));
+        setDecisions(mappedDecisions);
+      } catch (err) {
+        // Optionally handle error
+      }
+    };
+    fetchData();
+    const interval = setInterval(fetchData, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
-
     return () => clearInterval(timer);
   }, []);
 
-  const handleToggleSimulation = () => {
-    setSimulationRunning(!simulationRunning);
+  const handleToggleSimulation = async () => {
+    await fetch(`${BACKEND_URL}/pause`, { method: "POST" });
+    setSimulationRunning((prev) => !prev);
   };
 
-  const handleTriggerDisruption = () => {
-    // Mock disruption trigger
-    console.log('Disruption triggered');
+  const handleTriggerDisruption = async () => {
+    await fetch(`${BACKEND_URL}/trigger-disruption`, { method: "POST" });
   };
 
-  const handleFastForward = () => {
-    // Mock fast forward
-    console.log('Fast forward activated');
+  const handleFastForward = async () => {
+    await fetch(`${BACKEND_URL}/fast-forward`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ n: 5 }),
+    });
   };
 
   const handleToggleDarkMode = () => {
@@ -135,15 +167,15 @@ function App() {
       <main className="p-6">
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 h-[calc(100vh-200px)]">
           <div className="xl:col-span-1">
-            <InventoryPanel inventory={mockInventory} darkMode={darkMode} />
+            <InventoryPanel inventory={inventory} darkMode={darkMode} />
           </div>
           
           <div className="xl:col-span-1">
-            <MapPanel routes={[]} disruptions={[]} darkMode={darkMode} />
+            <MapPanel routes={routes} disruptions={disruptions} darkMode={darkMode} />
           </div>
           
           <div className="xl:col-span-1">
-            <DecisionPanel decisions={mockDecisions} darkMode={darkMode} />
+            <DecisionPanel decisions={decisions} darkMode={darkMode} />
           </div>
         </div>
       </main>
