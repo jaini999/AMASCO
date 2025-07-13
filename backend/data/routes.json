@@ -3,12 +3,12 @@
     "truck": "Truck 1",
     "from": "Warehouse X",
     "to": "Store A",
-    "route": "Route 3"
+    "route": "Route 4"
   },
   {
     "truck": "Truck 2",
     "from": "Warehouse Y",
     "to": "Store B",
-    "route": "Route 2"
+    "route": "Route 8"
   }
 ]

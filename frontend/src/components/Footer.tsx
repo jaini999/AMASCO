@@ -1,11 +1,10 @@
 import React from 'react';
-import { Play, Pause, FastForward, Zap, Moon, Sun } from 'lucide-react';
+import { Play, Pause, Zap, Moon, Sun } from 'lucide-react';
 
 interface FooterProps {
   simulationRunning: boolean;
   onToggleSimulation: () => void;
   onTriggerDisruption: () => void;
-  onFastForward: () => void;
   darkMode: boolean;
   onToggleDarkMode: () => void;
 }
@@ -14,7 +13,6 @@ export const Footer: React.FC<FooterProps> = ({
   simulationRunning,
   onToggleSimulation,
   onTriggerDisruption,
-  onFastForward,
   darkMode,
   onToggleDarkMode
 }) => {
@@ -49,14 +47,6 @@ export const Footer: React.FC<FooterProps> = ({
           >
             <Zap className="w-4 h-4" />
             Trigger Disruption
-          </button>
-          
-          <button
-            onClick={onFastForward}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium bg-blue-500 hover:bg-blue-600 text-white transition-all"
-          >
-            <FastForward className="w-4 h-4" />
-            Fast Forward
           </button>
         </div>
         

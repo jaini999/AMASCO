@@ -10934,5 +10934,1549 @@
     "target": "Route 8",
     "details": "Resolved disruption: Traffic at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
     "explanation": "Resolved disruption: Traffic at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:17:26.814877Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 7",
+    "details": "Added weather disruption at Route 7 (severity: high)",
+    "explanation": "Added weather disruption at Route 7 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:17:28.732752Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 7",
+    "details": "Checked disruption of type weather at Route 7",
+    "explanation": "Checked disruption of type weather at Route 7"
+  },
+  {
+    "timestamp": "2025-07-12T21:17:30.760103Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 7",
+    "details": "Checked disruption of type weather at Route 7",
+    "explanation": "Checked disruption of type weather at Route 7"
+  },
+  {
+    "timestamp": "2025-07-12T21:17:30.783226Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 7",
+    "details": "Resolved disruption: Weather at Route 7 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 7 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:17:35.096242Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 3 units (new stock: 7)",
+    "explanation": "Lowered stock at Store A by 3 units (new stock: 7)"
+  },
+  {
+    "timestamp": "2025-07-12T21:17:36.812964Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 3 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 3 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:17:54.088583Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 9",
+    "details": "Added traffic disruption at Route 9 (severity: high)",
+    "explanation": "Added traffic disruption at Route 9 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:17:54.872467Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:17:54.884143Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 9",
+    "details": "Resolved disruption: Traffic at Route 9 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 9 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:17:59.761047Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 4 units (new stock: 6)",
+    "explanation": "Lowered stock at Store A by 4 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:00.909736Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 4 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 4 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:06.120816Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 1",
+    "details": "Added weather disruption at Route 1 (severity: medium)",
+    "explanation": "Added weather disruption at Route 1 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:06.940935Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type weather at Route 1",
+    "explanation": "Checked disruption of type weather at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:06.957534Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 1",
+    "details": "Resolved disruption: Weather at Route 1 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 1 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:18:10.435575Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store B",
+    "details": "Lowered stock at Store B by 4 units (new stock: 6)",
+    "explanation": "Lowered stock at Store B by 4 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:10.980566Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store B",
+    "details": "Restocked 4 units at Store B (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 4 units at Store B (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:14.061216Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store C",
+    "details": "Lowered stock at Store C by 5 units (new stock: 3)",
+    "explanation": "Lowered stock at Store C by 5 units (new stock: 3)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:15.009582Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store C",
+    "details": "Restocked 5 units at Store C (new stock: 8, threshold: 8)",
+    "explanation": "Restocked 5 units at Store C (new stock: 8, threshold: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:15.425258Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 6",
+    "details": "Added weather disruption at Route 6 (severity: high)",
+    "explanation": "Added weather disruption at Route 6 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:17.027784Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type weather at Route 6",
+    "explanation": "Checked disruption of type weather at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:18.096291Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 1",
+    "details": "Added weather disruption at Route 1 (severity: high)",
+    "explanation": "Added weather disruption at Route 1 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:19.046024Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type weather at Route 6",
+    "explanation": "Checked disruption of type weather at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:19.070910Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type weather at Route 1",
+    "explanation": "Checked disruption of type weather at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:19.085554Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 6",
+    "details": "Resolved disruption: Weather at Route 6 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 6 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:18:21.102125Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type weather at Route 1",
+    "explanation": "Checked disruption of type weather at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:21.985178Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 5",
+    "details": "Added traffic disruption at Route 5 (severity: high)",
+    "explanation": "Added traffic disruption at Route 5 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:23.130522Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type weather at Route 1",
+    "explanation": "Checked disruption of type weather at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:23.145137Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type traffic at Route 5",
+    "explanation": "Checked disruption of type traffic at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:23.156584Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 1",
+    "details": "Resolved disruption: Weather at Route 1 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 1 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:18:24.932207Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 4 units (new stock: 6)",
+    "explanation": "Lowered stock at Store A by 4 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:26.231196Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 1",
+    "details": "Added accident disruption at Route 1 (severity: medium)",
+    "explanation": "Added accident disruption at Route 1 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:27.575356Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 8",
+    "details": "Added traffic disruption at Route 8 (severity: low)",
+    "explanation": "Added traffic disruption at Route 8 (severity: low)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:31.187966Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 4 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 4 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:31.208078Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type traffic at Route 5",
+    "explanation": "Checked disruption of type traffic at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:31.220702Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type accident at Route 1",
+    "explanation": "Checked disruption of type accident at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:31.231013Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type traffic at Route 8",
+    "explanation": "Checked disruption of type traffic at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:31.622769Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 3 units (new stock: 7)",
+    "explanation": "Lowered stock at Store A by 3 units (new stock: 7)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:33.246863Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 3 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 3 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:33.266261Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type traffic at Route 5",
+    "explanation": "Checked disruption of type traffic at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:33.278388Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type accident at Route 1",
+    "explanation": "Checked disruption of type accident at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:33.288382Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type traffic at Route 8",
+    "explanation": "Checked disruption of type traffic at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:33.297365Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 5",
+    "details": "Resolved disruption: Traffic at Route 5 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 5 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:18:35.311322Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type accident at Route 1",
+    "explanation": "Checked disruption of type accident at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:35.333591Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type traffic at Route 8",
+    "explanation": "Checked disruption of type traffic at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:35.758061Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store C",
+    "details": "Lowered stock at Store C by 3 units (new stock: 5)",
+    "explanation": "Lowered stock at Store C by 3 units (new stock: 5)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:37.353503Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store C",
+    "details": "Restocked 3 units at Store C (new stock: 8, threshold: 8)",
+    "explanation": "Restocked 3 units at Store C (new stock: 8, threshold: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:37.374495Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type accident at Route 1",
+    "explanation": "Checked disruption of type accident at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:37.387681Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type traffic at Route 8",
+    "explanation": "Checked disruption of type traffic at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:37.398476Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 1",
+    "details": "Resolved disruption: Accident at Route 1 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Accident at Route 1 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:18:39.412971Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type traffic at Route 8",
+    "explanation": "Checked disruption of type traffic at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:41.432636Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type traffic at Route 8",
+    "explanation": "Checked disruption of type traffic at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:41.445462Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 8",
+    "details": "Resolved disruption: Traffic at Route 8 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 8 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:18:51.895725Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 8",
+    "details": "Added weather disruption at Route 8 (severity: medium)",
+    "explanation": "Added weather disruption at Route 8 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:53.488977Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type weather at Route 8",
+    "explanation": "Checked disruption of type weather at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:18:53.507884Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 8",
+    "details": "Resolved disruption: Weather at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:19:11.493619Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 9",
+    "details": "Added weather disruption at Route 9 (severity: high)",
+    "explanation": "Added weather disruption at Route 9 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:11.560473Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type weather at Route 9",
+    "explanation": "Checked disruption of type weather at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:13.580238Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type weather at Route 9",
+    "explanation": "Checked disruption of type weather at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:13.591767Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 9",
+    "details": "Resolved disruption: Weather at Route 9 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 9 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:19:15.544920Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 5 units (new stock: 5)",
+    "explanation": "Lowered stock at Store A by 5 units (new stock: 5)"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:15.607204Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 5 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 5 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:16.276917Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 2",
+    "details": "Added traffic disruption at Route 2 (severity: medium)",
+    "explanation": "Added traffic disruption at Route 2 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:17.630143Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type traffic at Route 2",
+    "explanation": "Checked disruption of type traffic at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:17.641797Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 2 to Route 4 due to Disruption on Route 2",
+    "explanation": "Rerouted Truck 2 from Route 2 to Route 4 due to Disruption on Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:17.651581Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 2",
+    "details": "Resolved disruption: Traffic at Route 2 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 2 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:19:19.908930Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store B",
+    "details": "Lowered stock at Store B by 2 units (new stock: 8)",
+    "explanation": "Lowered stock at Store B by 2 units (new stock: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:21.672136Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store B",
+    "details": "Restocked 2 units at Store B (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 2 units at Store B (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:54.388718Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 5",
+    "details": "Added accident disruption at Route 5 (severity: high)",
+    "explanation": "Added accident disruption at Route 5 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:55.789417Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type accident at Route 5",
+    "explanation": "Checked disruption of type accident at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:57.819600Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type accident at Route 5",
+    "explanation": "Checked disruption of type accident at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:19:57.835015Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 5",
+    "details": "Resolved disruption: Accident at Route 5 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Accident at Route 5 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:24:40.238481Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 5 units (new stock: 5)",
+    "explanation": "Lowered stock at Store A by 5 units (new stock: 5)"
+  },
+  {
+    "timestamp": "2025-07-12T21:24:41.869851Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 5 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 5 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:24:45.086411Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 2 units (new stock: 8)",
+    "explanation": "Lowered stock at Store A by 2 units (new stock: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:24:45.900420Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 2 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 2 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:24:48.040616Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 4",
+    "details": "Added traffic disruption at Route 4 (severity: medium)",
+    "explanation": "Added traffic disruption at Route 4 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:24:49.927850Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 4",
+    "details": "Checked disruption of type traffic at Route 4",
+    "explanation": "Checked disruption of type traffic at Route 4"
+  },
+  {
+    "timestamp": "2025-07-12T21:24:49.943964Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 4 to Route 8 due to Disruption on Route 4",
+    "explanation": "Rerouted Truck 2 from Route 4 to Route 8 due to Disruption on Route 4"
+  },
+  {
+    "timestamp": "2025-07-12T21:24:49.955652Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 4",
+    "details": "Resolved disruption: Traffic at Route 4 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 4 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:29:03.177081Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 4 units (new stock: 6)",
+    "explanation": "Lowered stock at Store A by 4 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:04.587075Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 4 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 4 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:11.214831Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store C",
+    "details": "Lowered stock at Store C by 4 units (new stock: 4)",
+    "explanation": "Lowered stock at Store C by 4 units (new stock: 4)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:12.660507Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store C",
+    "details": "Restocked 4 units at Store C (new stock: 8, threshold: 8)",
+    "explanation": "Restocked 4 units at Store C (new stock: 8, threshold: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:23.502352Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store C",
+    "details": "Lowered stock at Store C by 5 units (new stock: 3)",
+    "explanation": "Lowered stock at Store C by 5 units (new stock: 3)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:24.701684Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store C",
+    "details": "Restocked 5 units at Store C (new stock: 8, threshold: 8)",
+    "explanation": "Restocked 5 units at Store C (new stock: 8, threshold: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:27.768288Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store C",
+    "details": "Lowered stock at Store C by 5 units (new stock: 3)",
+    "explanation": "Lowered stock at Store C by 5 units (new stock: 3)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:28.721008Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store C",
+    "details": "Restocked 5 units at Store C (new stock: 8, threshold: 8)",
+    "explanation": "Restocked 5 units at Store C (new stock: 8, threshold: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:34.618051Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 5 units (new stock: 5)",
+    "explanation": "Lowered stock at Store A by 5 units (new stock: 5)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:34.752201Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 5 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 5 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:36.183339Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 8",
+    "details": "Added accident disruption at Route 8 (severity: medium)",
+    "explanation": "Added accident disruption at Route 8 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:36.772791Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:36.784135Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 8 to Route 2 due to Disruption on Route 8",
+    "explanation": "Rerouted Truck 2 from Route 8 to Route 2 due to Disruption on Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:38.546666Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 5 units (new stock: 5)",
+    "explanation": "Lowered stock at Store A by 5 units (new stock: 5)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:38.800356Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 5 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 5 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:38.824468Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:29:38.838149Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 8",
+    "details": "Resolved disruption: Accident at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Accident at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:30:35.558880Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 2",
+    "details": "Added weather disruption at Route 2 (severity: low)",
+    "explanation": "Added weather disruption at Route 2 (severity: low)"
+  },
+  {
+    "timestamp": "2025-07-12T21:30:36.984183Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type weather at Route 2",
+    "explanation": "Checked disruption of type weather at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:30:36.996117Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 2 to Route 8 due to Disruption on Route 2",
+    "explanation": "Rerouted Truck 2 from Route 2 to Route 8 due to Disruption on Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:30:39.011822Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type weather at Route 2",
+    "explanation": "Checked disruption of type weather at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:30:39.035091Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 2",
+    "details": "Resolved disruption: Weather at Route 2 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 2 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:30:44.265465Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store C",
+    "details": "Lowered stock at Store C by 2 units (new stock: 6)",
+    "explanation": "Lowered stock at Store C by 2 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:30:45.063168Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store C",
+    "details": "Restocked 2 units at Store C (new stock: 8, threshold: 8)",
+    "explanation": "Restocked 2 units at Store C (new stock: 8, threshold: 8)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:18.605823Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 8",
+    "details": "Added accident disruption at Route 8 (severity: medium)",
+    "explanation": "Added accident disruption at Route 8 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:19.446525Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:19.460725Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 8 to Route 2 due to Disruption on Route 8",
+    "explanation": "Rerouted Truck 2 from Route 8 to Route 2 due to Disruption on Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:21.087025Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 2",
+    "details": "Added accident disruption at Route 2 (severity: medium)",
+    "explanation": "Added accident disruption at Route 2 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:21.477328Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:21.496360Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type accident at Route 2",
+    "explanation": "Checked disruption of type accident at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:21.507946Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 2 to Route 5 due to Disruption on Route 2",
+    "explanation": "Rerouted Truck 2 from Route 2 to Route 5 due to Disruption on Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:21.517859Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 8",
+    "details": "Resolved disruption: Accident at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Accident at Route 8 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:22.837625Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store B",
+    "details": "Lowered stock at Store B by 4 units (new stock: 6)",
+    "explanation": "Lowered stock at Store B by 4 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:23.533195Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store B",
+    "details": "Restocked 4 units at Store B (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 4 units at Store B (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:23.556677Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type accident at Route 2",
+    "explanation": "Checked disruption of type accident at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:24.776466Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 3",
+    "details": "Added weather disruption at Route 3 (severity: high)",
+    "explanation": "Added weather disruption at Route 3 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:25.576066Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type accident at Route 2",
+    "explanation": "Checked disruption of type accident at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:25.599905Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type weather at Route 3",
+    "explanation": "Checked disruption of type weather at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:25.614511Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 1",
+    "details": "Rerouted Truck 1 from Route 3 to Route 8 due to Disruption on Route 3",
+    "explanation": "Rerouted Truck 1 from Route 3 to Route 8 due to Disruption on Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:25.625555Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 2",
+    "details": "Resolved disruption: Accident at Route 2 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Accident at Route 2 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:26.303433Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 5",
+    "details": "Added traffic disruption at Route 5 (severity: low)",
+    "explanation": "Added traffic disruption at Route 5 (severity: low)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:27.640521Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type weather at Route 3",
+    "explanation": "Checked disruption of type weather at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:27.661293Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type traffic at Route 5",
+    "explanation": "Checked disruption of type traffic at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:27.675044Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 5 to Route 2 due to Disruption on Route 5",
+    "explanation": "Rerouted Truck 2 from Route 5 to Route 2 due to Disruption on Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:28.633300Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 2",
+    "details": "Added weather disruption at Route 2 (severity: low)",
+    "explanation": "Added weather disruption at Route 2 (severity: low)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:29.691093Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type weather at Route 3",
+    "explanation": "Checked disruption of type weather at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:29.707221Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type traffic at Route 5",
+    "explanation": "Checked disruption of type traffic at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:29.719058Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type weather at Route 2",
+    "explanation": "Checked disruption of type weather at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:29.729295Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 2 to Route 9 due to Disruption on Route 2",
+    "explanation": "Rerouted Truck 2 from Route 2 to Route 9 due to Disruption on Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:29.738480Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 3",
+    "details": "Resolved disruption: Weather at Route 3 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 3 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:30.861859Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 8",
+    "details": "Added accident disruption at Route 8 (severity: high)",
+    "explanation": "Added accident disruption at Route 8 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:31.752127Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type traffic at Route 5",
+    "explanation": "Checked disruption of type traffic at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:31.766458Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type weather at Route 2",
+    "explanation": "Checked disruption of type weather at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:31.790241Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:31.799655Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 1",
+    "details": "Rerouted Truck 1 from Route 8 to Route 4 due to Disruption on Route 8",
+    "explanation": "Rerouted Truck 1 from Route 8 to Route 4 due to Disruption on Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:32.941259Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 9",
+    "details": "Added traffic disruption at Route 9 (severity: high)",
+    "explanation": "Added traffic disruption at Route 9 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:33.811999Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 5",
+    "details": "Checked disruption of type traffic at Route 5",
+    "explanation": "Checked disruption of type traffic at Route 5"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:33.825986Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type weather at Route 2",
+    "explanation": "Checked disruption of type weather at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:33.834924Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:33.843201Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:33.851166Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 9 to Route 3 due to Disruption on Route 9",
+    "explanation": "Rerouted Truck 2 from Route 9 to Route 3 due to Disruption on Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:33.858915Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 5",
+    "details": "Resolved disruption: Traffic at Route 5 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 5 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:35.021630Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 3",
+    "details": "Added traffic disruption at Route 3 (severity: medium)",
+    "explanation": "Added traffic disruption at Route 3 (severity: medium)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:35.869358Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type weather at Route 2",
+    "explanation": "Checked disruption of type weather at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:35.891821Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:35.905563Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:35.916685Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:35.926590Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 3 to Route 1 due to Disruption on Route 3",
+    "explanation": "Rerouted Truck 2 from Route 3 to Route 1 due to Disruption on Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:36.926258Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 1",
+    "details": "Added traffic disruption at Route 1 (severity: high)",
+    "explanation": "Added traffic disruption at Route 1 (severity: high)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:37.941165Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 2",
+    "details": "Checked disruption of type weather at Route 2",
+    "explanation": "Checked disruption of type weather at Route 2"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:37.964958Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:37.979290Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:37.990363Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:38.000176Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:38.009292Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 1 to Route 6 due to Disruption on Route 1",
+    "explanation": "Rerouted Truck 2 from Route 1 to Route 6 due to Disruption on Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:38.017827Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 2",
+    "details": "Resolved disruption: Weather at Route 2 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Weather at Route 2 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:38.966295Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store A",
+    "details": "Lowered stock at Store A by 4 units (new stock: 6)",
+    "explanation": "Lowered stock at Store A by 4 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:40.032253Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store A",
+    "details": "Restocked 4 units at Store A (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 4 units at Store A (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:40.057166Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:40.071417Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:40.082643Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:40.092501Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:42.107310Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 8",
+    "details": "Checked disruption of type accident at Route 8",
+    "explanation": "Checked disruption of type accident at Route 8"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:42.132309Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:42.146453Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:42.157621Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:42.167646Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 8",
+    "details": "Resolved disruption: Accident at Route 8 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Accident at Route 8 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:43.520414Z",
+    "agent": "DisruptionAgent",
+    "action": "inventory_disruption",
+    "target": "Store B",
+    "details": "Lowered stock at Store B by 4 units (new stock: 6)",
+    "explanation": "Lowered stock at Store B by 4 units (new stock: 6)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:44.183070Z",
+    "agent": "InventoryAgent",
+    "action": "restock",
+    "target": "Store B",
+    "details": "Restocked 4 units at Store B (new stock: 10, threshold: 10)",
+    "explanation": "Restocked 4 units at Store B (new stock: 10, threshold: 10)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:44.207824Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:44.222221Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:44.233468Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:45.893172Z",
+    "agent": "DisruptionAgent",
+    "action": "add_disruption",
+    "target": "Route 6",
+    "details": "Added traffic disruption at Route 6 (severity: low)",
+    "explanation": "Added traffic disruption at Route 6 (severity: low)"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:46.249022Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 9",
+    "details": "Checked disruption of type traffic at Route 9",
+    "explanation": "Checked disruption of type traffic at Route 9"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:46.274165Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:46.288070Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:46.299203Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type traffic at Route 6",
+    "explanation": "Checked disruption of type traffic at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:46.309203Z",
+    "agent": "RouteAgent",
+    "action": "reroute",
+    "target": "Truck 2",
+    "details": "Rerouted Truck 2 from Route 6 to Route 8 due to Disruption on Route 6",
+    "explanation": "Rerouted Truck 2 from Route 6 to Route 8 due to Disruption on Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:46.318322Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 9",
+    "details": "Resolved disruption: Traffic at Route 9 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 9 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:48.332481Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:48.357943Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:48.372825Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type traffic at Route 6",
+    "explanation": "Checked disruption of type traffic at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:50.389950Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 3",
+    "details": "Checked disruption of type traffic at Route 3",
+    "explanation": "Checked disruption of type traffic at Route 3"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:50.412996Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:50.426250Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type traffic at Route 6",
+    "explanation": "Checked disruption of type traffic at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:50.437675Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 3",
+    "details": "Resolved disruption: Traffic at Route 3 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 3 (severity: medium). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:52.452914Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:52.470915Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type traffic at Route 6",
+    "explanation": "Checked disruption of type traffic at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:54.484815Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 1",
+    "details": "Checked disruption of type traffic at Route 1",
+    "explanation": "Checked disruption of type traffic at Route 1"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:54.495320Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type traffic at Route 6",
+    "explanation": "Checked disruption of type traffic at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:54.504777Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 1",
+    "details": "Resolved disruption: Traffic at Route 1 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 1 (severity: high). This disruption was active for approximately 4 seconds (2 simulation ticks)."
+  },
+  {
+    "timestamp": "2025-07-12T21:33:56.519163Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type traffic at Route 6",
+    "explanation": "Checked disruption of type traffic at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:58.546166Z",
+    "agent": "DisruptionAgent",
+    "action": "disruption_check",
+    "target": "Route 6",
+    "details": "Checked disruption of type traffic at Route 6",
+    "explanation": "Checked disruption of type traffic at Route 6"
+  },
+  {
+    "timestamp": "2025-07-12T21:33:58.568474Z",
+    "agent": "DisruptionAgent",
+    "action": "resolve_disruption",
+    "target": "Route 6",
+    "details": "Resolved disruption: Traffic at Route 6 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks).",
+    "explanation": "Resolved disruption: Traffic at Route 6 (severity: low). This disruption was active for approximately 4 seconds (2 simulation ticks)."
   }
 ]

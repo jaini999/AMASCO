@@ -67,7 +67,13 @@ def trigger_disruption():
         sim.log_action('DisruptionAgent', 'inventory_disruption', store, f"Lowered stock at {store} by {current_stock - new_stock} units (new stock: {new_stock})")
         return {"status": "ok", "disruption": {"type": "inventory", "store": store, "lowered_by": current_stock - new_stock, "new_stock": new_stock}}
     else:
-        disruption = sim.disruption_agent.add_disruption(ALL_POSSIBLE_ROUTES)
+        # Get only routes that actually have trucks on them
+        routes = read_json(ROUTES_PATH)
+        active_routes = [route['route'] for route in routes]
+        if not active_routes:
+            return {"status": "no_active_routes"}
+        
+        disruption = sim.disruption_agent.add_disruption(active_routes)
         if disruption:
             sim.log_action('DisruptionAgent', 'add_disruption', disruption['location'], f'Added {disruption["type"]} disruption at {disruption["location"]} (severity: {disruption["severity"]})')
             return {"status": "ok", "disruption": disruption}

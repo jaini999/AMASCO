@@ -8,6 +8,7 @@ interface Decision {
   timestamp: string;
   reasoning: string;
   impact: string;
+  isNew?: boolean;
 }
 
 interface DecisionPanelProps {
@@ -40,15 +41,24 @@ export const DecisionPanel: React.FC<DecisionPanelProps> = ({ decisions, darkMod
       
       <div className="space-y-4 max-h-96 overflow-y-auto">
         {decisions.map((decision) => (
-          <div key={decision.id} className={`${darkMode ? 'bg-zinc-900 border-zinc-700' : 'bg-gray-50 border-gray-200'} rounded-lg border overflow-hidden`}>
+          <div key={decision.id} className={`${darkMode ? 'bg-zinc-900 border-zinc-700' : 'bg-gray-50 border-gray-200'} rounded-lg border overflow-hidden transition-all duration-300 ${
+            decision.isNew 
+              ? 'ring-2 ring-blue-400 ring-opacity-75 animate-pulse bg-blue-500/10 border-blue-400/50' 
+              : ''
+          }`}>
             <div className="p-4">
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
                   <Bot className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  <div>
+                  <div className="flex items-center gap-2">
                     <span className={`inline-block px-2 py-1 rounded-full text-xs font-medium ${getAgentColor(decision.agent)}`}>
                       {decision.agent}
                     </span>
+                    {decision.isNew && (
+                      <span className="inline-block px-2 py-1 rounded-full text-xs font-medium bg-blue-500 text-white animate-pulse">
+                        NEW
+                      </span>
+                    )}
                   </div>
                 </div>
                 <span className={`text-xs ${darkMode ? 'text-zinc-400' : 'text-gray-600'}`}>{decision.timestamp}</span>
